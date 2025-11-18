@@ -22,5 +22,26 @@
         Desconnectar
     </button>
 
+    <script>
+        function onSignIn(response) {
+            // Quan l'usuari fa login:
+            // 1. Mostrem el botó de sortir
+            document.getElementById('boto-sortir').style.display = 'block';
+            // 2. Amaguem el botó de Google
+            document.querySelector('.g_id_signin').style.display = 'none';
+        }
+
+        function signOut() {
+            // Quan l'usuari es desconnecta:
+            // 1. Amaguem el botó de sortir
+            document.getElementById('boto-sortir').style.display = 'none';
+            // 2. Tornem a mostrar el botó de Google
+            document.querySelector('.g_id_signin').style.display = 'block';
+            
+            // Això tanca la sessió de Google perquè et torni a demanar usuari
+            google.accounts.id.disableAutoSelect();
+        }
+    </script>
+
 </body>
 </html>
