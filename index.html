@@ -24,6 +24,8 @@
 
     <script>
         function onSignIn(response) {
+            var id_token = response.credential;
+            console.log("ID Token: " + id_token);
             // Quan l'usuari fa login:
             // 1. Mostrem el botó de sortir
             document.getElementById('boto-sortir').style.display = 'block';
