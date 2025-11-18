@@ -8,6 +8,42 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <meta name="google-signin-client_id" content="374222587224-3bv1vgv6g4228p5filri3det5b63l2if.apps.googleusercontent.com">
 
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;     /* Centra horitzontalment */
+            justify-content: center; /* Centra verticalment */
+            height: 100vh;           /* Ocupa tota l'alçada de la pantalla */
+            margin: 0;
+            background-color: #f0f2f5; /* Un gris molt suau de fons */
+        }
+        #missatge-benvinguda {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        #boto-sortir {
+            background-color: #db4437; /* Vermell estil Google */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        #boto-sortir:hover {
+            background-color: #c53929; /* Vermell més fosc al passar el ratolí */
+        }
+
+        .g_id_signin {
+            margin-top: 10px;
+        }
+    </style>
+
 </head>
 <body>
 
